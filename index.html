@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:#fff;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav h1{
+    font-weight:600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:400;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd369;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h2{
+    font-size:48px;
+}
+
+.hero span{
+    color:#ffd369;
+}
+
+.hero p{
+    margin:20px 0;
+    max-width:600px;
+    font-size:18px;
+    opacity:0.9;
+}
+
+.btn{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ffd369;
+    color:#333;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+    background:#fff;
+    color:#333;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+/* About */
+.about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+/* Projects */
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#f3f3f3;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    text-decoration:none;
+    color:#764ba2;
+    font-weight:600;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#333;
+    color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>YourName</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h2>Hello, I'm <span>Your Name</span></h2>
+    <p>I am a passionate developer who loves building beautiful and functional websites. I enjoy turning ideas into reality using code.</p>
+    <button class="btn">Download CV</button>
+</div>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a web developer with strong skills in HTML, CSS, and JavaScript.
+        I enjoy designing clean user interfaces and creating smooth user experiences.
+        I am always learning and improving my skills.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project">
+            <h3>Project One</h3>
+            <p>A responsive website built using HTML and CSS.</p>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>A JavaScript based interactive web application.</p>
+        </div>
+        <div class="project">
+            <h3>Project Three</h3>
+            <p>A portfolio website showcasing my skills and projects.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+</section>
+
+<footer>
+    © 2026 Your Name | All Rights Reserved
+</footer>
+
+</body>
+</html>
